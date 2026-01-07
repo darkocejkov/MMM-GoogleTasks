@@ -34,7 +34,7 @@ Module.register("MMM-GoogleTasks",{
 	start: function() {
 
 		Log.info("Starting module: " + this.name);
-		this.tasks;
+		this.tasks = {};
 		this.loaded = false;
 		if(!this.config.listID) {
 			Log.log("config listID required");
